@@ -18,6 +18,7 @@ define(["jquery",
 
 
 Backbone.commonModal.modalOpen.call({
+
                     whereToAppend: "body",
                     
                     modalId: "offerMoreModal",
