@@ -5,6 +5,8 @@ How to set up this plugin
 1.Include bootstrap.js file  
 
 2.define bb.commonModal in your view
+
+
 define(["jquery",
         "backbone",
         "underscore","bb.commonModal"],
@@ -13,6 +15,8 @@ define(["jquery",
               _,bbModal) {
               
 3.Then call the modalOpen function
+
+
 Backbone.commonModal.modalOpen.call({
                     whereToAppend: "body",
                     modalId: "offerMoreModal",
