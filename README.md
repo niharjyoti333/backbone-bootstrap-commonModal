@@ -19,11 +19,18 @@ define(["jquery",
 
 Backbone.commonModal.modalOpen.call({
                     whereToAppend: "body",
+                    
                     modalId: "offerMoreModal",
+                    
                     modalTitle: "your description",
+                    
                     allowCancel: true,
+                    
                     showFooter: true,
+                    
                     cancelText: "cancel",
+                    
                     modalBody:  "Your body context"
+                    
                 })              
               
