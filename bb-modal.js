@@ -1,5 +1,5 @@
 /**
- * Author: RDP
+ * Author: NIHAR JYOTI SARMA
 
  Bootstrap and Backbone common modal
 
