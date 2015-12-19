@@ -1,4 +1,4 @@
-# backbone-bootstrap-commonModal
+# backbone-bootstrap-combineModal
 This plugin combine backbone and bootstrap
 How to set up this plugin
 
