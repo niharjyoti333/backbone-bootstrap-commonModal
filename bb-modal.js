@@ -49,9 +49,12 @@
     };
     Backbone.commonModal = {
 
-        modalOpen: function() {
+        /**
+         * This function will show the modal
+         */
 
-            var opts = $.extend({}, defaultOptions, this);
+        modalOpen: function() {
+            var opts = _.extend({}, defaultOptions, this);
 
             var template = _.template('\
             <div class="modal fade" id="<%= obj.modalId %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">\
@@ -80,8 +83,12 @@
 
         },
 
+        /**
+         * This function will close the modal
+         */
+
         modalClose: function() {
-            var opts = $.extend({}, defaultOptions, this);
+            var opts = _.extend({}, defaultOptions, this);
             $("#"+opts.modalId).modal('hide');
         }
 
