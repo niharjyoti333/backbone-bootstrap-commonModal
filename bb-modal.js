@@ -7,13 +7,13 @@
 
  1. define bb.commonModal in your view
  2.  Backbone.commonModal.modalOpen({
-                    whereToAppend: ".page-home",
-                    modalId: "offerMoreModal",
-                    modalTitle: "Promotion description",
+                    whereToAppend: "body",
+                    modalId: "myModal",
+                    modalTitle: "Modal Title",
                     allowCancel: true,
                     showFooter: true,
                     cancelText: "cancel",
-                    modalBody:  $("."+target).text()
+                    modalBody:  "Modal Body description"
                 })
  **/
 
