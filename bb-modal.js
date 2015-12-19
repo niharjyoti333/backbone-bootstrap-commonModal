@@ -1,12 +1,12 @@
 /**
- * Author: Nihar Jyoti Sarma
+ * Author: Nihar Jyoti sarma
 
- Bootstrap and Backbone common modal
+ Bootstrap and Backbone combine modal
 
  To run this modal
 
  1. define bb.commonModal in your view
- 2.  Backbone.commonModal.modalOpen.call({
+ 2.  Backbone.commonModal.modalOpen({
                     whereToAppend: ".page-home",
                     modalId: "offerMoreModal",
                     modalTitle: "Promotion description",
@@ -54,7 +54,7 @@
          */
 
         modalOpen: function() {
-            var opts = _.extend({}, defaultOptions, this);
+            var opts = _.extend({}, defaultOptions, arguments[0]);
 
             var template = _.template('\
             <div class="modal fade" id="<%= obj.modalId %>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">\
@@ -88,7 +88,7 @@
          */
 
         modalClose: function() {
-            var opts = _.extend({}, defaultOptions, this);
+            var opts = _.extend({}, defaultOptions, arguments[0]);
             $("#"+opts.modalId).modal('hide');
         }
 
