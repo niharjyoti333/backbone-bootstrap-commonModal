@@ -17,21 +17,15 @@ define(["jquery",
 3.Then call the modalOpen function
 
 
-Backbone.commonModal.modalOpen.call({
 
-                    whereToAppend: "body",
+                Backbone.commonModal.modalOpen({    
+                        whereToAppend: "body",
+                        modalId: "offerMoreModal",
+                        modalTitle: "your description",
+                        allowCancel: true,
+                        showFooter: true,
+                        cancelText: "cancel",
+                        modalBody:  "Your body context"
                     
-                    modalId: "offerMoreModal",
-                    
-                    modalTitle: "your description",
-                    
-                    allowCancel: true,
-                    
-                    showFooter: true,
-                    
-                    cancelText: "cancel",
-                    
-                    modalBody:  "Your body context"
-                    
-                })              
+                })       
               
